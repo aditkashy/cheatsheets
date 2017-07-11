@@ -25,3 +25,13 @@ And for numbers:
 >>> print('{0:03d}'.format(4))  # python 3
 >>> 004
 ```
+##turn off warnings
+Turn them off for a specific function
+```python
+def fxn():
+    warnings.warn("deprecated", DeprecationWarning)
+
+with warnings.catch_warnings():
+    warnings.simplefilter("ignore")
+    fxn()
+```

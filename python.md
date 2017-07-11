@@ -41,3 +41,5 @@ _suppress all warnings_
 import warnings
 warnings.filterwarnings("ignore")
 ```
+
+##Gitting good with git

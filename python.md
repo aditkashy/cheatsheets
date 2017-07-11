@@ -26,7 +26,7 @@ And for numbers:
 >>> 004
 ```
 ##turn off warnings
-Turn them off for a specific function
+_Turn them off for a specific function_
 ```python
 def fxn():
     warnings.warn("deprecated", DeprecationWarning)
@@ -34,4 +34,10 @@ def fxn():
 with warnings.catch_warnings():
     warnings.simplefilter("ignore")
     fxn()
+```
+
+_suppress all warnings_
+```python 
+import warnings
+warnings.filterwarnings("ignore")
 ```
